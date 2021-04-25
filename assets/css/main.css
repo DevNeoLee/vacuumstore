@@ -184,7 +184,6 @@ input, select, textarea {
 	}
 
 		@media screen and (max-width: 1680px) {
-
 			.container {
 				width: 70em;
 			}
@@ -192,7 +191,6 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
-
 			.container {
 				width: calc(100% - 60px);
 			}
@@ -200,23 +198,18 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
 			.container {
 				width: calc(100% - 80px);
 			}
-
 		}
 
 		@media screen and (max-width: 736px) {
-
 			.container {
 				width: calc(100% - 40px);
 			}
-
 		}
 
 /* Row */
-
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -459,7 +452,6 @@ input, select, textarea {
 				}
 
 		@media screen and (max-width: 1680px) {
-
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -700,7 +692,6 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 100px;
 						}
-
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -945,11 +936,9 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 60px;
 						}
-
 		}
 
 		@media screen and (max-width: 980px) {
-
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1190,11 +1179,9 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 80px;
 						}
-
 		}
 
 		@media screen and (max-width: 736px) {
-
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1435,11 +1422,9 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 40px;
 						}
-
 		}
 
 /* Form */
-
 	form label {
 		display: block;
 		color: #252122;
@@ -1525,7 +1510,6 @@ input, select, textarea {
 		}
 
 /* Section/Article */
-
 	section, article {
 		margin-bottom: 2.5em;
 	}
@@ -1712,7 +1696,6 @@ input, select, textarea {
 		}
 
 /* Image */
-
 	.image {
 		display: inline-block;
 		outline: 0;
@@ -1745,7 +1728,6 @@ input, select, textarea {
 		}
 
 /* List */
-
 	ul {
 		list-style: disc;
 		padding-left: 1em;
@@ -1835,7 +1817,6 @@ input, select, textarea {
 				}
 
 /* Dates */
-
 	ul.dates {
 		list-style: none;
 		padding-left: 0;
@@ -1896,7 +1877,6 @@ input, select, textarea {
 			}
 
 /* Divided */
-
 	ul.divided {
 		list-style: none;
 		padding-left: 0;
@@ -1913,7 +1893,6 @@ input, select, textarea {
 			}
 
 /* Social */
-
 	ul.social {
 		list-style: none;
 		padding-left: 0;
@@ -1934,8 +1913,8 @@ input, select, textarea {
 
 			ul.social li a {
 				display: inline-block;
-				width: 3em;
-				height: 3em;
+				width: 2em;
+				height: 2em;
 				text-align: center;
 				border-radius: 5px;
 				background: #888;
@@ -2081,19 +2060,18 @@ input, select, textarea {
 				}
 
 /* Page Wrapper */
-
 	#page-wrapper > section {
 		margin-bottom: 0;
 	}
 
 /* Header */
-
 	#header {
 		position: relative;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
 		padding: 3em 0 0em 0;
 		text-align: center;
+		/* background-color: lightblue; */
 	}
 
 		#header h1 {
@@ -2103,10 +2081,53 @@ input, select, textarea {
 			letter-spacing: -0.035em;
 			line-height: 1;
 		}
+	.logo-info {
+		display: flex;
+		justify-content: space-around;
+	}
 /* Logo */
 	#logo {
 		width: 350px;
 	}
+
+/* Important Info */
+	#important-info {
+		/* display: inline; */
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		/* background-color: lightsalmon; */
+	}
+
+	#important-info-logos {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		/* padding-bottom: 100px; */
+		width: 700px;
+	}
+
+	#important-info-logos a {
+		text-decoration: none;
+	}
+
+	#miele-logo {
+		width: 100px;
+	}
+
+	#sebo-logo {
+		width: 75px;
+	}
+
+	.certified {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 20px;
+		color: rgb(147, 1, 1);
+	}
+
 /* Nav */
 
 	#nav {
@@ -2202,7 +2223,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: url("../../images/pic01.jpg");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -2430,6 +2451,13 @@ input, select, textarea {
 				padding: 3em 0 0em 0;
 			}
 
+				#important-info-logos {
+	
+		justify-content: space-between;
+
+		width: 550px;
+	}
+
 		/* Banner */
 
 			#banner {
@@ -2438,7 +2466,6 @@ input, select, textarea {
 			}
 
 		/* Intro */
-
 			#intro {
 				padding: 0;
 			}
@@ -2456,13 +2483,11 @@ input, select, textarea {
 				}
 
 		/* Main */
-
 			#main {
 				padding: 20px 0;
 			}
 
 		/* Footer */
-
 			#footer {
 				padding: 2em 0 0 0;
 			}
@@ -2480,7 +2505,6 @@ input, select, textarea {
 					}
 
 		/* Copyright */
-
 			#copyright {
 				margin: 0;
 			}
@@ -2488,18 +2512,74 @@ input, select, textarea {
 	}
 
 /* Medium */
-
 	#navPanel, #titleBar {
 		display: none;
 	}
 
 	@media screen and (max-width: 980px) {
-
 		/* Basic */
 
 			html, body {
 				overflow-x: hidden;
 			}
+
+		/* Header */
+	#header {
+		position: relative;
+		background: #ffffff;
+		border-bottom: solid 1px #ccc;
+		padding: 3em 0 0em 0;
+		text-align: center;
+		/* background-color: lightblue; */
+	}
+
+		#header h1 {
+			color: #252122;
+			font-weight: 900;
+			font-size: 2.3em;
+			letter-spacing: -0.035em;
+			line-height: 1;
+		}
+	.logo-info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Important Info */
+		#important-info {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			/* background-color: lightsalmon; */
+		}
+
+		#important-info-logos {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			width: 500px;
+		}
+
+		#important-info-logos a {
+			text-decoration: none;
+		}
+
+		#miele-logo {
+			width: 100px;
+		}
+
+		#sebo-logo {
+			width: 75px;
+		}
+
+		.certified {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			font-size: 20px;
+			color: rgb(147, 1, 1);
+		}
 
 		/* Box */
 
