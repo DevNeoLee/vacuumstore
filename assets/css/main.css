@@ -153,7 +153,7 @@ input, select, textarea {
 
 	a {
 		color: #d52349;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
@@ -2433,7 +2433,7 @@ input, select, textarea {
 		/* Section/Article */
 
 			header.major {
-				margin: 0em 0 0em 0;
+				margin: 2em 0 2em 0;
 			}
 
 				header.major h2 {
@@ -2452,13 +2452,15 @@ input, select, textarea {
 				padding: 3em 0 0em 0;
 			}
 
-				#important-info-logos {
-	
-		justify-content: space-between;
-
-		width: 550px;
-	}
-
+			#important-info-logos {
+				justify-content: space-between;
+				width: 550px;
+			}
+		
+		/* SliderShow */
+		#slideshow {
+			margin-top: 25px;
+		}
 		/* Banner */
 
 			#banner {
@@ -2834,6 +2836,9 @@ input, select, textarea {
 				font-size: 1.25em;
 			}
 
+			#logo {
+				width: 250px;
+			}
 		/* Button */
 
 			input[type="button"].large,
