@@ -84,7 +84,7 @@ input, select, textarea {
 
 	body {
 		background: #252122;
-		background-image: url("images/bg02.png");
+		/* background-image: url("images/bg02.png"); */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2381,7 +2381,7 @@ input, select, textarea {
 
 	#main {
 		position: relative;
-		background: #f7f7f7 url("images/bg02.png");
+		/* background: #f7f7f7 url("images/bg02.png"); */
 		padding: 3em 0 3em 0;
 		margin: 0px;
 	}
@@ -2392,14 +2392,14 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url("images/bg01.png");
+			/* background: url("images/bg01.png"); */
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.1;
 		}
 
 		#main .major h2 {
-			background: #f7f7f7 url("images/bg02.png");
+			/* background: #f7f7f7 url("images/bg02.png"); */
 		}
 
 /* Footer */
@@ -2424,7 +2424,7 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url("images/bg01.png");
+			/* background: url("images/bg01.png"); */
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.5;
@@ -2817,7 +2817,7 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				color: #858484;
-				background-image: url("images/bg02.png");
+				/* background-image: url("images/bg02.png"); */
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
@@ -3068,16 +3068,41 @@ input, select, textarea {
 			}
 
 			.tag phone {
-				right: 70px;
+				right: 60px;
 				top: 80px;
 				width: 200px;
-				font-size: 1.7rem;
+				font-size: 1.5rem;
+				padding: 0.5rem;
+				/* background-color: rgb(23, 251, 255); */
+				border-radius: 5px;
+				color: black;
+				border: 1px solid #333;
 			}
+
+			.tag phone:hover {
+				background-color: rgba(4, 4, 247, 0.81);
+				color: white;
+			}
+
+			.tag phone::before {
+				content: 'Click to Call';
+				font-size: 1rem;
+				display: block;
+			}
+
+			.tag phone:hover::before {
+				content: 'Call';
+				font-size: 1rem;
+				display: block;
+			}
+
+			
 
 			.tag email {
 				right: 105px;
 				top: 110px;
 				width: 200px;
+				display: none;
 			}
 
 		/* Intro */
