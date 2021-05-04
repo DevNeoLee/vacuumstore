@@ -2114,15 +2114,18 @@ input, select, textarea {
 	.logo {
 		display: flex;
 		justify-content: space-around;
-		align-items: baseline;
+		align-items:flex-start;
 	}
 
 	.tag {
-		/* width: 200px; */
 		position: relative;
 		/* background-color: lightcoral; */
 		display: inline-block;
+		transition: all 0.3s ease;
+	}
 
+	.tag:hover {
+		transform: scale(1.1);
 	}
 
 	.tag img {
@@ -2135,20 +2138,20 @@ input, select, textarea {
 	}
 
 	.tag address {
-		right: 80px;
+		right: 90px;
 		top: 17px;
 		width: 200px;
 	}
 
 	.tag phone {
-		right: 100px;
-		top: 17px;
+		right: 110px;
+		top: 100px;
 		width: 200px;
 	}
 
 	.tag email {
-		right: 95px;
-		top: 40px;
+		right: 145px;
+		top: 130px;
 		width: 200px;
 	}
 
@@ -2888,7 +2891,7 @@ input, select, textarea {
 /* Small */
 
 	@media screen and (max-width: 736px) {
-
+		
 		/* Basic */
 
 			body, input, textarea, select {
@@ -3040,6 +3043,14 @@ input, select, textarea {
 					font-size: 1.75em;
 					letter-spacing: -0.035em;
 				}
+			
+			.logo {
+				display: initial;
+			}
+
+			.tag {
+				margin: 1rem 0 2rem 0;
+			}
 
 		/* Intro */
 
