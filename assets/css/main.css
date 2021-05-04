@@ -3052,6 +3052,10 @@ input, select, textarea {
 				margin: 1rem 0 2rem 0;
 			}
 
+			.tag img {
+				width: 300px;
+			}
+
 		/* Intro */
 
 			#intro {
