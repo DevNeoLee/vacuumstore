@@ -1934,8 +1934,8 @@ input, select, textarea {
 
 			ul.social li a {
 				display: inline-block;
-				width: 2em;
-				height: 2em;
+				width: 3em;
+				height: 3em;
 				text-align: center;
 				border-radius: 5px;
 				background: #888;
@@ -2103,14 +2103,54 @@ input, select, textarea {
 			line-height: 1;
 		}
 	.logo-info {
-		display: flex;
-		justify-content: space-around;
+		/* display: flex;
+		justify-content: space-around; */
 	}
 /* Logo */
 	#logo {
 		width: 350px;
 	}
 
+	.logo {
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+	}
+
+	.tag {
+		/* width: 200px; */
+		position: relative;
+		/* background-color: lightcoral; */
+		display: inline-block;
+
+	}
+
+	.tag img {
+		width: 400px;
+	}
+
+	.tag address, .tag phone, .tag email {
+		position: absolute;
+		/* background-color: lightgreen; */
+	}
+
+	.tag address {
+		right: 80px;
+		top: 17px;
+		width: 200px;
+	}
+
+	.tag phone {
+		right: 100px;
+		top: 17px;
+		width: 200px;
+	}
+
+	.tag email {
+		right: 95px;
+		top: 40px;
+		width: 200px;
+	}
 
 /* Important Info */
 	#important-info {
@@ -2125,7 +2165,7 @@ input, select, textarea {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		/* padding-bottom: 100px; */
+		padding: 50px;
 		width: 700px;
 	}
 
@@ -2369,7 +2409,8 @@ input, select, textarea {
 
 	#footer {
 		position: relative;
-		color: #858484;
+		/* color: #858484; */
+		color: white;
 		padding: 3em 0 0 0;
 		background-color: rgb(50, 50, 50);
 	}
@@ -2387,8 +2428,8 @@ input, select, textarea {
 		}
 
 		#footer a {
-			color: #c5c4c4;
-		}
+			color: white;
+		} 
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b {
 			color: #fff;
