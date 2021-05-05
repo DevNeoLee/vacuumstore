@@ -2265,13 +2265,13 @@ input, select, textarea {
 				}
 
 				#nav > ul > li.current > a {
-					background: #8c0014;
+					background: #d50505d9;
 					color: #fff !important;
 					font-weight: 700;
 				}
 
 				#nav > ul > li.current > a:hover {
-					background: #d50505d9;
+					background: #8c0014;
 				}
 
 	.dropotron {
@@ -2445,6 +2445,16 @@ input, select, textarea {
 		font-size: 1.3em;
 		line-height: 1.7em;
 		color: white;
+		padding: 10px 10px;
+	}
+
+	.store-hours li{
+		display: flex;
+		justify-content: center;
+	}
+
+	.store-hours li span {
+		width: 300px;
 	}
 
 	#footer {
@@ -3136,18 +3146,18 @@ input, select, textarea {
 				top: 86px;
 				width: 200px;
 				font-size: 1.5rem;
-				font-weight: 600;
+				font-weight: 500;
 				padding: 0.5rem;
-				background-color: #1b00a0;
+				background-color: #fff;
 				border-radius: 5px;
-				color: #fff;
-				/* border: 2px solid #333; */
+				color: #333;
+				border: 2px solid #333;
 				transition: all 0.35s ease;
 			}
 
 			.tag phone:hover {
-				background-color: #fff;
-				color: #000;
+				background-color: #1b00a0;
+				color: #fff;
 
 			}
 
@@ -3155,7 +3165,7 @@ input, select, textarea {
 				content: 'Click to Call';
 				font-size: 1.1rem;
 				display: block;
-				font-weight: 600;
+				font-weight: 500;
 			}
 
 			.tag phone:hover::before {
@@ -3253,6 +3263,10 @@ input, select, textarea {
         height: 110%;
         object-fit: cover;
 		/* width: 100%; */
+}
+
+#footer h2 {
+	margin: 20px 0;
 }
 
 #map {
