@@ -1628,7 +1628,7 @@ input, select, textarea {
 
 	.box img {
 		width: 100px;
-		background-color: lightgreen;
+		/* background-color: lightgreen; */
 	}
 /* Button */
 
@@ -2493,7 +2493,34 @@ input, select, textarea {
 			#footer header h2 {
 				font-size: 1.3em;
 			}
+		
+			.content {
+				background-color: #aaa;
+				margin: 10px;
+				padding: 10px;
+				border-radius: 5px;
+			}
 
+			.content form {
+				margin: 10px;
+			}
+
+			.fields {
+				/* background-color: lightpink; */
+				display: grid;
+				gap: 10px;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 5fr;
+			}
+
+			.field-double {
+				grid-column: 1 / span 2;
+				grid-row: 2 /span 1;
+			}
+
+			.button .submit {
+				min-width: 200px;
+			}
 /* Copyright */
 
 	#copyright {
@@ -3200,6 +3227,10 @@ input, select, textarea {
 				padding: 30px 0 0px 0;
 			}
 
+			.content {
+				/* background-color: magenta; */
+			}
+
 	}
 
 .swiper-container {
@@ -3219,4 +3250,10 @@ input, select, textarea {
         height: 110%;
         object-fit: cover;
 		/* width: 100%; */
+}
+
+#map {
+	width: 80%;
+	height: 450px;
+	background-color: lightpink;
 }
