@@ -1839,6 +1839,33 @@ input, select, textarea {
 					top: 0;
 				}
 
+			.contact-phone {
+				font-size: 1.4rem;
+				font-weight:300;
+				text-align: center;
+			}
+
+			.contact phone::after {
+				content: "Click to Call";
+				position: absolute;
+				width: 100px;
+				padding: 5px;
+				font-size: 1rem;
+				background-color: white;
+				border: 1px solid #333;
+				border-radius: 5px;
+				right: 30%;
+				top: -30%;
+				opacity: 0;
+				transition: all 0.35s ease;
+				color: black;
+			}
+
+			.contact phone:hover::after {
+				opacity: 100;
+				/* transform: scale(1.1); */
+			}
+
 /* Dates */
 	ul.dates {
 		list-style: none;
@@ -1924,7 +1951,7 @@ input, select, textarea {
 		padding-left: 0;
 		overflow: hidden;
 		cursor: default;
-		margin: 0 0 3.25em 0;
+		margin: 0 0 0em 0;
 		text-align: center;
 	}
 
@@ -2452,6 +2479,7 @@ input, select, textarea {
 		line-height: 1.7em;
 		color: white;
 		padding: 10px 50px;
+		display: flex;
 	}
 
 	.store-hours li{
@@ -2460,7 +2488,7 @@ input, select, textarea {
 	}
 
 	.store-hours li span {
-		width: 300px;
+		width: 200px;
 	}
 
 	#footer {
@@ -3165,6 +3193,7 @@ input, select, textarea {
 			.tag phone:hover {
 				background-color: #1b00a0;
 				color: #fff;
+				border: none;
 
 			}
 
@@ -3246,11 +3275,6 @@ input, select, textarea {
 			#footer {
 				padding: 30px 0 0px 0;
 			}
-
-			.content {
-				/* background-color: magenta; */
-			}
-
 	}
 
 .swiper-container {
@@ -3279,5 +3303,4 @@ input, select, textarea {
 #map {
 	width: 100%;
 	height: 450px;
-	background-color: lightpink;
 }
