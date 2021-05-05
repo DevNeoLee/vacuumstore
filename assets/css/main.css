@@ -3095,11 +3095,6 @@ input, select, textarea {
 				width: 320px;
 			}
 
-			.tag address, .tag phone, .tag email {
-				/* margin-left: 7rem;  */
-				/* padding-left: 5rem;  */
-			}
-
 			.tag address {
 				right: 50px;
 				top: 7px;
@@ -3116,7 +3111,7 @@ input, select, textarea {
 				background-color: #1b00a0;
 				border-radius: 5px;
 				color: #fff;
-				border: 2px solid #333;
+				/* border: 2px solid #333; */
 				transition: all 0.35s ease;
 			}
 
