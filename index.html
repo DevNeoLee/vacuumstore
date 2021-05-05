@@ -4,66 +4,64 @@
 		<title>Vacuum Supermarket</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" type="image/png" href="images/favicon.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<section id="header">
-						<div class="logo-info">
-							<!-- Logo -->
-							<div class="logo">
-								<div><a href="index.html"><img src="/images/logo.png" id="logo" alt="logo image"></a></div>
-								<div class="tag">
-									<img src="/images/tag.png" alt="">
-									<address><strong>1717 Lonesdale AVE North Vancouver</strong></address>
-									<div><a href="tel:+1604-984-9356">
-										<strong><phone>(604) 984-9356</phone></strong>
-										</a>
-									</div>
-									<email><strong>vacuumsupermarket1717@gmail.com</strong></email>
-								</div>
-							</div>
-							<!-- Important Info-->
-							<div id="important-info">
-								<div id="important-info-logos">
-									<div class="certified"><img src="images/sebo-logo.png" alt="Cebo Logo" id="sebo-logo"></div>
-									<div class="certified"><span>Certified Retailer</span><img src="images/miele-logo.png" alt="Miele Logo" id="miele-logo"></div>
-									<div class="certified"><img src="images/free-five-year-warranty.png" alt="free-five-year-warranty-logo" width="70px"></div>
+					<div class="logo-info">
+						<!-- Logo -->
+						<div class="logo">
+							<div><a href="index.html"><img src="/images/logo.png" id="logo" alt="logo image"></a></div>
+							<div class="tag">
+								<img src="/images/tag.png" alt="">
+								<address><strong>1717 Lonesdale AVE North Vancouver</strong></address>
+								<div><a href="tel:+1604-984-9356">
+									<strong><phone>(604) 984-9356</phone></strong>
 									</a>
 								</div>
+								<email><strong>vacuumsupermarket1717@gmail.com</strong></email>
 							</div>
 						</div>
-						<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Super Deals</a></li>
-								<li><a href="products.html">Products</a></li>
-								<li><a href="repair-service.html">Repair/Service</a></li>
-								<li><a href="part-acce.html">Parts/Accessories</a></li>
-								<li><a href="rental.html">Rentals</a></li>
-								<li><a href="about-us.html">About Us</a></li>
-							</ul>
-						</nav>
-						<section>
-							<div id="slideshow">
-								<div>
-									<a href=""><img src="/images/banner/1400x425_Main-Triflex-Banner.jpeg"></a>
-								</div>
-								<div>
-									<a href=""><img src="/images/banner/miele_vaccume_img.webp"></a>
-								</div>
-								<div>
-									<a href=""><img src="/images/vacuum/c3excellent_body.jpg"></a>
-								</div>
-								<div>
-									<a href=""><img src="/images/banner/miele-vacuum-red-dog.jpeg"></a>
-								</div>
+						<!-- Important Info-->
+						<div id="important-info">
+							<div id="important-info-logos">
+								<div class="certified"><img src="images/sebo-logo.png" alt="Cebo Logo" id="sebo-logo"></div>
+								<div class="certified"><span>Certified Retailer</span><img src="images/miele-logo.png" alt="Miele Logo" id="miele-logo"></div>
+								<div class="certified"><img src="images/free-five-year-warranty.png" alt="free-five-year-warranty-logo" width="70px"></div>
+								</a>
 							</div>
-						</section>
-					
+						</div>
+					</div>
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Super Deals</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="repair-service.html">Repair/Service</a></li>
+							<li><a href="part-acce.html">Parts/Accessories</a></li>
+							<li><a href="rental.html">Rentals</a></li>
+							<li><a href="about-us.html">About Us</a></li>
+						</ul>
+					</nav>
+					<!-- Carousel -->
+					<div class="swiper-container">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide"><img src="/images/banner/1400x425_Main-Triflex-Banner.jpeg"></div>
+							<div class="swiper-slide"><img src="/images/banner/miele_vaccume_img.webp"></div>
+							<div class="swiper-slide"><img src="/images/vacuum/c3excellent_body.jpg"></div>
+							<div class="swiper-slide"><img src="/images/banner/miele-vacuum-red-dog.jpeg"></div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
 				</section>
 
 			<!-- Main -->
@@ -259,7 +257,7 @@
 							<div class="col-12 col-12-medium">
 								<section class="google-map">
 
-									
+
 								</section>
 								<!-- <section>
 									<header>
@@ -355,5 +353,43 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				const swiper = new Swiper('.swiper-container', {
+					loop: true,
+					auto: true,
+
+					// spaceBetween: 30,
+					centeredSlides: true,
+					autoplay: {
+						delay: 2000,
+						disableOnInteraction: false,
+					},
+
+					//pagination
+					pagination: {
+						el: '.swiper-pagination',
+					},
+
+					// Navigation arrows
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+
+					// scrollbar
+					scrollbar: {
+						el: '.swiper-scrollbar',
+					},
+
+					// effect: "cube",
+					// grabCursor: true,
+					// cubeEffect: {
+					// 	shadow: true,
+					// 	slideShadows: true,
+					// 	shadowOffset: 20,
+					// 	shadowScale: 0.94,
+					// },
+				});
+			</script>
 	</body>
 </html>

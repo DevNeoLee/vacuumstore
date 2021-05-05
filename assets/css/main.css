@@ -3207,33 +3207,21 @@ input, select, textarea {
 
 	}
 
-#slideshow { 
-  position: relative; 
-  width: 100%;
-  height: 300px;  
-  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
-  /* object-fit: cover; */
-  background:rgba(0, 0, 0, 0.5);
-  /* margin-bottom: 10px;  */
+.swiper-container {
+  height: 410px;
+  /* width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: lightgray;
+  /* object-fit: fill; */
 }
 
-#slideshow > div { 
-  position: absolute; 
-  background-color: lightblue;
-  /* object-fit: cover; */
-  width: 100%;
-  height: 300px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* object-fit: cover;  */
-}
-
-#slideshow > div > a > img {
-	width: 100%;
-	height: 300px; 
-	object-fit: none;
-	background: rgba(0, 0, 0, 0.557);
-	/* object-position: -20% 0;  */
-	overflow-x: hidden;
+.swiper-container img {
+	/* width: 100%; */
+	 /* display: block; */
+        width: 100%;
+        height: 110%;
+        object-fit: cover;
+		/* width: 100%; */
 }
