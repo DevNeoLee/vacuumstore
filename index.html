@@ -15,7 +15,7 @@
 				const location = { lat: 49.3244657, lng: -123.0725273 };
 				// The map, centered at Uluru
 				const map = new google.maps.Map(document.getElementById("map"), {
-					zoom: 4,
+					zoom: 13,
 					center: location,
 				});
 				// The marker, positioned at Uluru
@@ -351,14 +351,14 @@
 							<div class="col-4 col-12-medium">
 								<section>
 									<div class="content">
-										<p><strong style="font-size: 1.25rem">Leave me a message</strong></p>
+										<p><strong style="font-size: 1.25rem">Leave us a message</strong></p>
 										<form action="https://formspree.io/f/myylklye" method="POST">
 											<div class="fields grid">
 												<div class="field">
-													<input type="text" name="name" id="name" placeholder="Name" />
+													<input type="text" name="name" id="name" placeholder="Your Name" />
 												</div>
 												<div class="field">
-													<input type="email" name="email" id="email" placeholder="Email" />
+													<input type="email" name="email" id="email" placeholder="Your Email" />
 												</div>
 												<div class="field-double">
 													<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
