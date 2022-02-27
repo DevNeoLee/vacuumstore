@@ -287,6 +287,10 @@ table {
   margin-bottom: 2em;
 }
 
+#logo2 {
+  display: none;
+}
+
 /* Container */
 
 .container {
@@ -1751,7 +1755,7 @@ button,
   cursor: pointer;
   border: 0;
   border-radius: 5px;
-  background: #d52349;
+  background: #c51349;
   color: #fff !important;
   font-weight: 500;
   outline: 0;
@@ -1769,7 +1773,8 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-  background: #e53359;
+  background: #3f33e5;
+  /* background: #e53359; */
 }
 
 input[type="button"]:active,
@@ -2243,10 +2248,7 @@ ul.social li a.fa-google-plus:hover {
   letter-spacing: -0.035em;
   line-height: 1;
 }
-.logo-info {
-  /* display: flex;
-		justify-content: space-around; */
-}
+
 /* Logo */
 #logo {
   width: 350px;
@@ -2261,10 +2263,51 @@ ul.social li a.fa-google-plus:hover {
 #logo {
   transition: all 0.35s ease-in-out;
 }
-#logo:hover {
-  transform: scale(1.03);
+
+.logoImage {
+  position: relative;
+  z-index: 3;
 }
 
+/* The animation code */
+@keyframes moveVacuum {
+  from {
+    right: -1200px;
+    top: 850px;
+  }
+  to {
+    right: 70px;
+    top: 12px;
+  }
+}
+
+.movingVacuum {
+  position: absolute;
+  width: 89px;
+  right: 70px;
+  top: 12px;
+  transform: moveVacuum;
+  animation-name: moveVacuum;
+  animation-duration: 1.5s;
+  transition: all 1s ease-in-out;
+}
+
+.movingVacuum img {
+  width: 100%;
+}
+
+.logoImage:hover > .movingVacuum {
+  transform: rotate(20deg);
+  transform: translateY(2px) rotate(4deg) translateX(-270px);
+  transition: all 0.7s ease-in-out;
+}
+
+.logoImage:hover > .logoText {
+  /* transform: scale(1.02); */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Tag */
 .maple {
   width: 50px;
   transition: all 0.5s ease-in-out;
@@ -2292,6 +2335,7 @@ ul.social li a.fa-google-plus:hover {
   display: inline-block;
   transition: all 0.3s ease;
   margin: 15px;
+  z-index: 1;
 }
 
 .tag:hover > .maple {
@@ -2384,15 +2428,15 @@ ul.social li a.fa-google-plus:hover {
   content: "Click to Call";
   position: absolute;
   width: 100px;
-  padding: 5px;
+  padding: 0px;
   font-size: 0.9rem;
   background-color: white;
-  border: 1px solid #333;
-  border-radius: 5px;
-  right: 50px;
-  top: -36px;
+  /* border: 1px solid #333; */
+  /* border-radius: 5px; */
+  right: -73px;
+  top: 6px;
   opacity: 0;
-  transition: all 0.35s ease;
+  transition: all 0.3s ease;
   z-index: 5;
 }
 
@@ -2487,13 +2531,13 @@ ul.social li a.fa-google-plus:hover {
 }
 
 #nav > ul > li.current > a {
-  background: #d50505d9;
+  background: #8c0014;
   color: #fff !important;
   font-weight: 700;
 }
 
 #nav > ul > li.current > a:hover {
-  background: #8c0014;
+  background: #d50505d9;
 }
 
 .dropotron {
@@ -3221,6 +3265,26 @@ ul.social li a.fa-google-plus:hover {
   /* Basic */
   * {
     /* background-color: #2e02ff; */
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #logo2 {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    background-color: lightgreen;
+    /* height: 500px; */
+  }
+
+  .movingVacuum {
+    display: none;
+    /* transform: moveVacuum;
+    animation-name: moveVacuum; */
+    /* animation-duration: 1.5s;
+    transition: all 1s ease-in-out; */
   }
 
   body,
