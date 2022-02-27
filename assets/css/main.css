@@ -2265,32 +2265,110 @@ ul.social li a.fa-google-plus:hover {
   transform: scale(1.03);
 }
 
+.maple {
+  width: 50px;
+  transition: all 0.5s ease-in-out;
+  /* background-color: #1b00a0; */
+  /* margin: 0 auto; */
+  z-index: 2;
+}
+
+.maple img {
+  width: 100%;
+}
+
+.mountain {
+  width: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.mountain img {
+  width: 100%;
+}
+
 .tag {
   position: relative;
   /* background-color: lightcoral; */
   display: inline-block;
   transition: all 0.3s ease;
+  margin: 15px;
 }
 
-.tag:hover {
-  /* transform: scale(1.04); */
+.tag:hover > .maple {
+  transform: translateY(-42px) rotate(-23deg) translateX(3px) scale(1.2);
+  transition: all 0.5s ease-in-out;
 }
 
-.tag img {
+.tag:hover > .mountain {
+  transform: translateY(-55px) translateX(10px) rotate(2deg) scale(2);
+  transition: all 0.5s ease-in-out;
+}
+
+.tagframe {
   width: 400px;
 }
 
 .tag address,
 .tag phone,
-.tag email {
+.tag .maple,
+.tag .mountain,
+.tag .hidingblock1,
+.tag .hidingblock2,
+.tag .shoplocaltext {
   position: absolute;
   /* background-color: lightgreen; */
+}
+
+.tag .mountain {
+  right: 125px;
+  top: 30px;
+}
+
+.tag .maple {
+  left: 60px;
+  top: 27px;
+  transform: (rotate(-20deg));
+  z-index: 0;
+}
+
+.tag .shoplocaltext {
+  left: 35px;
+  bottom: 55px;
+  width: 100px;
+  height: 30px;
+  transform: rotate(-7deg);
+  color: #2e02ff;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 0.8;
+  z-index: 3;
+}
+
+.tag .hidingblock1,
+.tag .hidingblock2 {
+  height: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.tag .hidingblock1 {
+  left: 50px;
+  top: 27px;
+  width: 85px;
+  transform: rotate(-7deg);
+}
+
+.tag .hidingblock2 {
+  right: 80px;
+  top: 24px;
+  width: 200px;
 }
 
 .tag address {
   right: 72px;
   top: 17px;
   width: 200px;
+  z-index: 3;
 }
 
 .tag phone {
@@ -2315,6 +2393,7 @@ ul.social li a.fa-google-plus:hover {
   top: -36px;
   opacity: 0;
   transition: all 0.35s ease;
+  z-index: 5;
 }
 
 .tag phone:hover::after {
@@ -2350,7 +2429,7 @@ ul.social li a.fa-google-plus:hover {
 }
 
 #miele-logo {
-  width: 100px;
+  width: 130px;
 }
 
 #sebo-logo {
@@ -2362,7 +2441,7 @@ ul.social li a.fa-google-plus:hover {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  font-size: 20px;
+  font-size: 24px;
   color: rgb(147, 1, 1);
   font-weight: 500;
 }
@@ -3138,8 +3217,11 @@ ul.social li a.fa-google-plus:hover {
 
 /* Small */
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 790px) {
   /* Basic */
+  * {
+    /* background-color: #2e02ff; */
+  }
 
   body,
   input,
@@ -3307,7 +3389,32 @@ ul.social li a.fa-google-plus:hover {
     margin: 1rem 0 2rem 0;
   }
 
-  .tag img {
+  .maple {
+    width: 35px;
+    /* background-color: #1b00a0; */
+    /* margin: 0 auto; */
+  }
+
+  .tag .mountain {
+    right: -25px;
+    top: -40px;
+    width: 53px;
+  }
+
+  .tag .maple {
+    left: -15px;
+    top: -40px;
+    transform: rotate(-15deg);
+    width: 38px;
+    /* background-color: #1075a9; */
+  }
+
+  .tag .hidingblock1,
+  .tag .hidingblock2 {
+    display: none;
+  }
+
+  .tagframe {
     width: 320px;
   }
 
@@ -3315,6 +3422,10 @@ ul.social li a.fa-google-plus:hover {
     right: 37px;
     top: 7px;
     width: 200px;
+  }
+
+  .tag .shoplocaltext {
+    display: none;
   }
 
   .tag phone {
