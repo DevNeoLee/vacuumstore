@@ -2273,7 +2273,7 @@ ul.social li a.fa-google-plus:hover {
 }
 
 .tag:hover {
-  transform: scale(1.04);
+  /* transform: scale(1.04); */
 }
 
 .tag img {
@@ -2288,7 +2288,7 @@ ul.social li a.fa-google-plus:hover {
 }
 
 .tag address {
-  right: 90px;
+  right: 72px;
   top: 17px;
   width: 200px;
 }
@@ -3312,7 +3312,7 @@ ul.social li a.fa-google-plus:hover {
   }
 
   .tag address {
-    right: 50px;
+    right: 37px;
     top: 7px;
     width: 200px;
   }
