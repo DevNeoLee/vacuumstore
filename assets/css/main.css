@@ -1593,35 +1593,6 @@ form ::-moz-focus-inner {
   border: 0;
 }
 
-/* Tables */
-
-table {
-  width: 100%;
-}
-
-table tr {
-  border-top: solid 1px #dddddd;
-}
-
-table tr:first-child {
-  border-top: 0;
-}
-
-table td {
-  padding: 0.5em 1em 0.5em 1em;
-}
-
-table th {
-  text-align: left;
-  padding: 0.5em 1em 0.5em 1em;
-  font-weight: 700;
-  margin: 0 0 1em 0;
-}
-
-table thead {
-  border-bottom: solid 2px #dddddd;
-}
-
 /* Section/Article */
 section,
 article {
@@ -1631,6 +1602,7 @@ article {
 section p {
   font: 1.2rem;
   font-weight: 500;
+  line-height: 2;
 }
 
 section > :last-child,
@@ -1676,9 +1648,12 @@ footer {
 
 .box {
   background: #ffffff;
-  border-bottom: solid 1px #ccc;
   padding: 2.75em 1.75em 2.75em 1.75em;
   position: relative;
+  /* background-color: lightcoral; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  text-align: center;
 }
 
 .box .image.featured {
@@ -1708,32 +1683,6 @@ sup {
   font-weight: 300;
 }
 
-.dollar {
-  position: relative;
-  color: rgba(31, 31, 31, 0.961);
-  font-weight: 500;
-  margin-left: 100px;
-  font-size: 1.5em;
-  /* right: 10%; */
-}
-
-.dollar::after {
-  content: "Canadian$";
-  padding: 2px;
-  border-radius: 5px;
-  position: absolute;
-  right: -40px;
-  top: -30px;
-  font-size: 0.6em;
-  opacity: 0;
-  transition: all 0.35s ease-in-out;
-  /* border: 1px solid #333; */
-}
-
-.dollar:hover::after {
-  opacity: 0.7;
-}
-
 .box.post header > p {
   margin-top: 1.25em;
   font-size: 1.3em;
@@ -1747,6 +1696,33 @@ sup {
   width: 100px;
   /* background-color: lightgreen; */
 }
+
+.dates-hours {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+details {
+  /* font: 16px "Open Sans", Calibri, sans-serif;
+  width: 620px; */
+  padding-bottom: 2rem;
+  display: inline-block;
+}
+
+details > summary {
+  border: none;
+  cursor: pointer;
+  list-style: none;
+  /* background-color: #1075a9; */
+}
+
+details > p {
+  padding: 2rem 0rem 0rem 0rem;
+  border-radius: 0 0 10px 10px;
+  transition: all 1s ease-in-out;
+  margin: 0;
+}
+
 /* Button */
 
 input[type="button"],
@@ -1760,7 +1736,7 @@ button,
   cursor: pointer;
   border: 0;
   border-radius: 5px;
-  background: #c51349;
+  background: #8c0014;
   color: #fff !important;
   font-weight: 500;
   outline: 0;
@@ -1771,6 +1747,7 @@ button,
   -webkit-transition: background-color 0.25s ease-in-out;
   -ms-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
+  margin: 2rem;
 }
 
 input[type="button"]:hover,
@@ -1778,7 +1755,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-  background: #3f33e5;
+  background: #c51349;
   /* background: #e53359; */
 }
 
@@ -1967,9 +1944,9 @@ ul.contact li:first-child h3 {
   content: "Click to Call";
   position: absolute;
   width: 100px;
-  padding: 5px;
+  /* padding: 5px; */
   font-size: 1rem;
-  background-color: white;
+  /* background-color: white; */
   border: 1px solid #333;
   border-radius: 5px;
   right: 30%;
@@ -2434,11 +2411,9 @@ ul.social li a.fa-google-plus:hover {
   position: absolute;
   width: 120px;
   padding: 0px;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   background-color: white;
-  /* border: 1px solid #333; */
-  /* border-radius: 5px; */
-  right: -73px;
+  right: -93px;
   top: 6px;
   opacity: 0;
   transition: all 0.3s ease;
@@ -2717,7 +2692,7 @@ ul.social li a.fa-google-plus:hover {
 }
 
 .ourWarranty {
-  width: 60%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
 }
@@ -2732,7 +2707,9 @@ ul.social li a.fa-google-plus:hover {
   line-height: 1.7em;
   color: white;
   padding: 10px 50px;
-  display: flex;
+  /* display: flex; */
+  /* margin: 0 2rem; */
+  /* background-color: lightcoral; */
 }
 
 .store-hours li {
@@ -2742,6 +2719,8 @@ ul.social li a.fa-google-plus:hover {
 
 .store-hours li span {
   width: 200px;
+  /* background-color: lightgreen; */
+  min-width: 140px;
 }
 
 #footer {
@@ -3296,7 +3275,7 @@ ul.social li a.fa-google-plus:hover {
     display: block;
     width: 250px;
     margin: 0 auto;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     /* height: 500px; */
   }
 
@@ -3528,7 +3507,7 @@ ul.social li a.fa-google-plus:hover {
   }
 
   .tag phone:hover {
-    background-color: #1b00a0;
+    background-color: #0246ff;
     color: #fff;
     border: none;
   }
