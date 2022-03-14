@@ -1695,6 +1695,7 @@ sup {
 .box img {
   width: 100px;
   /* background-color: lightgreen; */
+  border-radius: 9px 9px 0 0;
 }
 
 .dates-hours {
@@ -2033,6 +2034,9 @@ ul.divided {
 ul.divided li {
   border-top: solid 1px #ddd;
   padding: 0.5em 0 0.5em 0;
+  /* color: red; */
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 ul.divided li:first-child {
@@ -2268,9 +2272,9 @@ ul.social li a.fa-google-plus:hover {
   width: 89px;
   right: 70px;
   top: 12px;
-  transform: moveVacuum;
+  /* transform: moveVacuum;
   animation-name: moveVacuum;
-  animation-duration: 1.5s;
+  animation-duration: 1.5s; */
   transition: all 1s ease-in-out;
 }
 
@@ -2700,6 +2704,26 @@ ul.social li a.fa-google-plus:hover {
 .parts-images {
   display: flex;
 }
+
+.parts-images .image1 {
+  padding-right: 1.5rem;
+}
+
+.parts-images .image2 {
+  padding-left: 1.5rem;
+}
+
+.parts-images img {
+  border-radius: 8px;
+  /* margin: 1rem; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.t1 {
+  width: 5000px;
+  background-color: lightblue;
+}
+
 /* Footer */
 .store-hours {
   font-weight: 500;
@@ -3086,6 +3110,18 @@ ul.social li a.fa-google-plus:hover {
 
   #main {
     padding: 40px 0;
+  }
+
+  .parts-images {
+    display: block;
+  }
+
+  .parts-images .image1 {
+    padding: 0 0 1.5rem 0;
+  }
+
+  .parts-images .image2 {
+    padding: 1.5rem 0 0rem 0;
   }
 
   /* Copyright */
