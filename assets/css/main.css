@@ -1654,6 +1654,7 @@ footer {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   text-align: center;
+  width: auto;
 }
 
 .box .image.featured {
@@ -1694,8 +1695,8 @@ sup {
 
 .box img {
   width: 100px;
-  /* background-color: lightgreen; */
-  border-radius: 9px 9px 0 0;
+  width: auto;
+  margin: -1.5rem 0 2rem 0;
 }
 
 .dates-hours {
@@ -2674,11 +2675,13 @@ ul.social li a.fa-google-plus:hover {
   position: relative;
   background: #f7f7f7;
   padding: 0.5em 0 3em 0;
+  width: 100%;
 }
 .banner {
   margin: 0 auto;
   text-align: center;
 }
+
 #main:before {
   content: "";
   position: absolute;
@@ -3069,6 +3072,10 @@ ul.social li a.fa-google-plus:hover {
 
   #nav {
     display: none;
+  }
+
+  .bannerImage {
+    width: 100%;
   }
 
   /* Intro */
